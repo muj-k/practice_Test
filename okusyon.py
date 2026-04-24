@@ -107,7 +107,7 @@ def result(cmd):
         
     return print(f"RESULT {cmd[1]} {items.name} {items.item_status} {bidder_result} {value_result}")
 
-N = 14  #本番時　　N=int(input())
+N=int(input())
 
 for i in range(N):
     cmd = list(map(str,input().split()))
