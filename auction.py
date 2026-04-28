@@ -23,7 +23,7 @@ class AuctionSystem:
 
         try:
             price = int(cmd[3])
-        except:
+        except ValueError:
             return "ValueError"
         
         
@@ -52,7 +52,7 @@ class AuctionSystem:
         
         try:
             price = int(cmd[3])
-        except:
+        except ValueError:
             return "ValueError"
         
         if price <= items.bid_price or price <= items.initial_price:
